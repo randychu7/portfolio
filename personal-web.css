@@ -5,6 +5,13 @@
     color: #fff;
     font-family: "Poppins", sans-serif;
   }
+.page-wrapper{
+    height: 100vh;
+}
+  section{
+    height: 100vh;
+}
+
 
   /*-----Navbar------------------------------------------------*/
   header{
@@ -54,10 +61,10 @@ header ul li a:hover{
 }
    
   /*---Parallax------------------------------------------------*/
-  .container {
+  .parallax{
     height: 100vh;
   }
-  .container img {
+  .parallax img {
     width: 100%;
     position: absolute;
     height: 110vh;
