@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /*===========Navbar------------------------------------------------*/
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+header ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a.active,
+header ul li a:hover{
+   background-color: rgb(255, 255, 255);
+   color: #000000;
+  transition: ease-in 0.3s;
+}
+   
+  /*======Parallax------------------------------------------------*/
+  .container {
+    height: 100vh;
+  }
+  .container img {
+    width: 100%;
+    position: absolute;
+    height: 110vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .main-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 6rem;
+    transform: translate(-50%, -30%);
+  }
+  
+  /*======= Body =====*/
+  .content {
+    width: 100%;
+    /* background: rgb(0, 0, 0); */
+    background-image: url('images/transition.png');
+    min-height: 100vh;
+    z-index: 2;
+    position: absolute;
+  }
+  .content-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+  }
+  
+  .text {
+    padding: 2rem 20rem;
+    font-size: 1.1rem;
+  }
