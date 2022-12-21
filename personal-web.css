@@ -6,7 +6,7 @@
     font-family: "Poppins", sans-serif;
   }
 
-  /*===========Navbar------------------------------------------------*/
+  /*-----Navbar------------------------------------------------*/
   header{
     position: absolute;
     top: 0;
@@ -23,8 +23,8 @@ header .logo{
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-    
-    font-size: 25px;
+    margin-left: 10px;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 
@@ -53,7 +53,7 @@ header ul li a:hover{
   transition: ease-in 0.3s;
 }
    
-  /*======Parallax------------------------------------------------*/
+  /*---Parallax------------------------------------------------*/
   .container {
     height: 100vh;
   }
@@ -66,9 +66,9 @@ header ul li a:hover{
   }
   .main-title {
     position: absolute;
-    top: 30%;
+    top: 45%;
     left: 50%;
-    font-size: 6rem;
+    font-size: 2rem;
     transform: translate(-50%, -30%);
   }
   
