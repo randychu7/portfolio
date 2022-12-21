@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 10px;    
+    padding: 10px 5px 2px 1px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,8 +75,7 @@ header ul li a:hover{
   /*======= Body =====*/
   .content {
     width: 100%;
-    /* background: rgb(0, 0, 0); */
-    background-image: url('images/transition.png');
+    background: rgb(0, 0, 0);
     min-height: 100vh;
     z-index: 2;
     position: absolute;
