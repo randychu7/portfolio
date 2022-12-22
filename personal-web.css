@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    transition: ease-in 1s;
 
 }
 
@@ -86,7 +86,7 @@ header ul li a:hover{
   /*----First Page Body ------------------------------------------*/
   .content {
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: #08091c;
     min-height: 110vh;
     z-index: 2;
     position: absolute;
@@ -99,14 +99,14 @@ header ul li a:hover{
     text-align: center;
     padding-top: 5em
   }
- 
   .name{
     display: flex;
     font-size: 4rem;
     font-weight: 600;
   }
   .text {
-    padding: 2rem 15rem;
+    height: 100v;
+    padding: 4rem 15rem;
     font-size: 1.1rem;
   }
   /*-----Second Page Body -------------------------------------------*/
