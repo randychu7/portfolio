@@ -84,17 +84,61 @@ header ul li a:hover{
   }
 
   .scroll{
-   
-    border: 0.5em solid #ffff;
+    cursor: pointer;
+    border: 0.2em solid #ffff;
     border-radius: 3em;
     position:absolute;
-    bottom: 15px;
-    height: 50px;
+    transform: translate(-50%, -30%);
+    bottom: 10px;
+    height: 65px;
     left:50%;
-    width: 30px
+    width: 37px
     
   }
+  .scroll:before,
+  .scroll:after {
+    position:absolute;
+    content: "";
+    top: 20%;
+    left: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    height: 0.6em;
+    width: 0.6em;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll 1s ease-in-out infinite;
+  }
+
+  .scroll:after{
+    top: 40%
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      top:90%;
+    }
+  }
+.scroll-down{
+  letter-spacing: 3px;
+  position: absolute;
+  transform: translate(-50%, -30%);
+  bottom: 10px;
+  height: 15px;
+  left:50%
   
+
+}
   /*----First Page Body ------------------------------------------*/
   .content {
     width: 100%;
