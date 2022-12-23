@@ -336,23 +336,65 @@ header ul li a:hover{
 
   .screen{
     position:relative;
-    top: 20px;
+    border-radius: 2px;
+    top: 10px;
     left: 10px;
-    height: calc(100% - 50px);
+    height: calc(100% - 25px);
     width: calc(100% - 20px);
     background-color: white
+    
+  }
+  .bottom-strip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    top: 24px;
+    width: 100%;
+    height: 15px;
+    background-color: #2e2724;
+    border-top: 1px solid #000000;
+  
+  }
+
+  span{
+    position: relative;
+    text-align: center;
+    font-size: 7px;
+    color:white;
   }
 
   .keyboard{
-    position: relative;
-    height: 30px;
-    width: 520px;
-    background-color: crimson;
-    border-radius: 3px 3px;
+    display: flex;
+    justify-content: center;
+    height: 15px;
+    width: 530px;
+    background-color: #3A3F49;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     z-index: 1;
     bottom:10px;
   }
-  
+  .notch{
+    display: flex;
+    width: 100px;
+    height: 6px;
+    background-color: #212429;
+    border-radius: 0 0 3px 3px;
+  }
+  .base{
+    display:flex;
+    bottom: 10px;
+    height: 10px;
+    width: 530px;
+    background-color: #2d3139;
+    border-bottom-left-radius: 80% 80%;
+    border-bottom-right-radius: 80% 80%;
+  }
+ 
   /*-----Third Page Footer ------------------*/
   .four{
     background-color: brown;
