@@ -70,15 +70,14 @@ header ul li a:hover{
    
   /*---Parallax------------------------------------------------*/
   .parallax{
-    height: 100vh;
-    width: 100vw;
+    height: 950px;
+    width: 100%;
    
   }
   .parallax img {
+    height:950px;
     width: 100%;
-    height:110vh;
     position: absolute;
-    height: 100vh;
     object-fit: cover;
     z-index: -1;
   }
@@ -153,7 +152,7 @@ header ul li a:hover{
   .content {
     width: 100%;
     background: #08091c;
-    min-height: 110vh;
+    min-height: 100vh;
     z-index: 2;
     position: absolute;
   }
@@ -172,22 +171,22 @@ header ul li a:hover{
   }
 /*----Cube --------------------------------*/
   .container{
-    margin-top: 8em;
+    margin-top: 3em;
     padding-right:20em;
     display: flex;
     justify-content: flex-end;
   }
 
-  .cube{
+.cube{
     position:relative;
     width: 150px;
     height: 150px;
     transform-style: preserve-3d;
     z-index: 2;
     animation: animate 40s linear infinite;
-  }
+}
 
-  @keyframes animate {
+@keyframes animate {
     0% {
       transform: rotateX(-30deg) rotateY(0deg);
   }
@@ -223,10 +222,8 @@ header ul li a:hover{
                     {
                       transform: rotateX(-30deg) rotateY(360deg);}
 
-                    }
-
-
-  .cube div{
+}
+.cube div{
     position: absolute;
     top: 0;
     left: 0;
@@ -234,9 +231,8 @@ header ul li a:hover{
     height: 100%;
     transform-style: preserve-3d;
     z-index: 2;
-  }
-
-  .cube div span{
+}
+.cube div span{
     position: absolute;
     top: 0;
     left: 0;
@@ -245,7 +241,7 @@ header ul li a:hover{
     background: linear-gradient(#151515,#ff4704);
     transform: rotateY(calc(90deg* var(--i))) translateZ(74.8px);
     z-index: 2;
-  }
+}
 .top{
   position: absolute;
   top: 0;
@@ -255,7 +251,6 @@ header ul li a:hover{
   background-color: #222;
   transform: rotateX(90deg) translateZ(75px);
 }
-
 .top::before{
   content:'';
   position: absolute;
@@ -276,6 +271,8 @@ header ul li a:hover{
 
   /*-----------About------------- */
   .about{
+    position: absolute;
+
     font-size: 1rem;
     margin-top: 10em;
     width: 100%;
@@ -295,7 +292,7 @@ header ul li a:hover{
 
   /*-----Third Page Footer ------------------*/
   .three{
-    background-color: red;
+    background-color: #08091c;
     height: 100vh;
     width: 100%;
   }
@@ -330,9 +327,32 @@ header ul li a:hover{
     
   }
   .laptop{
-    width:50%;
-    height: 30%;
+    width: 460px;
+    height: 300px;
+    background-color: #2e2724;
+    border-radius: 15px;
+   margin:auto;
   }
+
+  .screen{
+    position:relative;
+    top: 20px;
+    left: 10px;
+    height: calc(100% - 50px);
+    width: calc(100% - 20px);
+    background-color: white
+  }
+
+  .keyboard{
+    position: relative;
+    height: 30px;
+    width: 520px;
+    background-color: crimson;
+    border-radius: 3px 3px;
+    z-index: 1;
+    bottom:10px;
+  }
+  
   /*-----Third Page Footer ------------------*/
   .four{
     background-color: brown;
