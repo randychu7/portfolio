@@ -5,17 +5,20 @@
     color: #fff;
     font-family: "Poppins", sans-serif;
   }
-.page-wrapper{
+
+  .page-wrapper {
     height: 100vh;
-}
-  section{
-    height: 100vh;
-}
-
-
-  /*-----Navbar------------------------------------------------*/
-
+    width: 100%;
+    object-fit: cover;
+  }
   
+  section {
+    height: 100vh;
+    width: 100%;
+  }
+
+
+  /*-----Navbar-------------------------------*/ 
   header{
     position: absolute;
     top: 0;
@@ -57,6 +60,7 @@ header ul li a{
     color: #fff;
     border-radius: 20px;
 }
+
 header ul li a.active,
 header ul li a:hover{
    background-color: rgb(255, 255, 255);
@@ -67,14 +71,18 @@ header ul li a:hover{
   /*---Parallax------------------------------------------------*/
   .parallax{
     height: 100vh;
+    width: 100vw;
+   
   }
   .parallax img {
     width: 100%;
+    height:110vh;
     position: absolute;
-    height: 110vh;
+    height: 100vh;
     object-fit: cover;
     z-index: -1;
   }
+
   .main-title {
     position: absolute;
     top: 45%;
@@ -83,6 +91,7 @@ header ul li a:hover{
     transform: translate(-50%, -30%);
   }
 
+  /*---Scrollbar------------------------------------------------*/
   .scroll{
     cursor: pointer;
     border: 0.2em solid #ffff;
@@ -161,48 +170,133 @@ header ul li a:hover{
     font-size: 4rem;
     font-weight: 600;
   }
-  .about{
-    font-size: 2rem;
-    margin-top: 4em;
-    width: 100%;
-   height: 10vh;
-   padding: 1rem 15rem;
-   color: rgb(57, 215, 255);
-   text-shadow: 0 0 0.5em hsl(0 0% 100% / 0.4), 0 0 0.3em currentColor;
-    position:relative;
-  }
-  
-  .about::before {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    background: rgb(57, 215, 255);
-    top: 41%;
-    left: 1;
-    width: 17%;
-    height: 60%;
-  
-    transform: perspective(1em) rotateX(44deg) scale(1, 0.25);
-    filter: blur(1em);
-    opacity: 0.85;
-  }
-  .text {
-    height: 25vh;
-    padding: 1rem 15rem;
-    font-size: 1rem;
+/*----Cube --------------------------------*/
+  .container{
+    margin-top: 8em;
+    padding-right:20em;
+    display: flex;
+    justify-content: flex-end;
   }
 
+  .cube{
+    position:relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    z-index: 2;
+    animation: animate 40s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotateX(-30deg) rotateY(0deg);
+  }
+  10%
+  {
+    transform: rotateX(-30deg) rotateY(36deg);}
+    20%
+    {
+      transform: rotateX(-30deg) rotateY(72deg);}
+      30%
+      {
+        transform: rotateX(-30deg) rotateY(108deg);}
+        40%
+        {
+          transform: rotateX(-30deg) rotateY(144deg);}
+          50%
+          {
+            transform: rotateX(-30deg) rotateY(180deg);}
+            60%
+            {
+              transform: rotateX(-30deg) rotateY(216deg);}
+              70%
+              {
+                transform: rotateX(-30deg) rotateY(252deg);}
+                80%
+                {
+                  transform: rotateX(-30deg) rotateY(288deg);}
+                  90%
+                  {
+                    transform: rotateX(-30deg) rotateY(324deg);}
+
+                    100%
+                    {
+                      transform: rotateX(-30deg) rotateY(360deg);}
+
+                    }
+
+
+  .cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: 2;
+  }
+
+  .cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#ff4704);
+    transform: rotateY(calc(90deg* var(--i))) translateZ(74.8px);
+    z-index: 2;
+  }
+.top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-color: #222;
+  transform: rotateX(90deg) translateZ(75px);
+}
+
+.top::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height:150px;
+  background: #ff4400;
+  transform: translateZ(-250px);
+  filter:blur(20px);
+  box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
+  0 0 100px  rgba(253, 79, 4, 0.542),
+  0 0 150px  rgba(253, 79, 4, 0.6),
+  0 0 200px  rgba(253, 79, 4, 0.8),
+  0 0 2500px  rgba(253, 79, 4, 1);
+
+}
+
+  /*-----------About------------- */
+  .about{
+    font-size: 1rem;
+    margin-top: 10em;
+    width: 100%;
+   height: 100vh;
+   padding: 1rem 25rem;
+  }
+.about-me{
+  font-size: 2rem;
+}
     
   /*-----Second Page Body -------------------------------------------*/
   .two{
     width: 100%;
     background-color: #08091c;
-    height: 30% 
+    height: 100vh;
   }
 
   /*-----Third Page Footer ------------------*/
   .three{
     background-color: red;
+    height: 100vh;
   }
   /*-----Third Page Footer ------------------*/
   .four{
