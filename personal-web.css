@@ -70,15 +70,12 @@ header ul li a:hover{
    
   /*---Parallax------------------------------------------------*/
   .parallax{
-    height: 950px;
-    width: 100%;
+    height: 100vh;
    
   }
   .parallax img {
-    height:950px;
-    width: 100%;
+    height:110vh;
     position: absolute;
-    object-fit: cover;
     z-index: -1;
   }
 
@@ -138,15 +135,12 @@ header ul li a:hover{
     }
   }
 .scroll-down{
-  
   letter-spacing: 3px;
   position: absolute;
   transform: translate(-50%, -30%);
   bottom: 10px;
   height: 15px;
   left:50%
-  
-
 }
   /*----First Page Body ------------------------------------------*/
   .content {
@@ -272,12 +266,13 @@ header ul li a:hover{
   /*-----------About------------- */
   .about{
     position: absolute;
-
     font-size: 1rem;
     margin-top: 10em;
     width: 100%;
-   height: 100vh;
-   padding: 1rem 25rem;
+   height: 110vh;
+   padding-left:20rem;
+   padding-right:20rem;
+  
   }
 .about-me{
   font-size: 2rem;
@@ -306,15 +301,15 @@ header ul li a:hover{
   }
 
   .featured-container{
-    padding-left: 3em;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 45%;
+    width: 50%;
 
   }
   .featured-project{
-    font-size: 50px;
+  font-size: 50px;
   padding-bottom: 0.5em;
   width:70%
   
@@ -331,12 +326,12 @@ header ul li a:hover{
     height: 300px;
     background-color: #2e2724;
     border-radius: 15px;
-   margin:auto;
+    margin:auto;
   }
 
   .screen{
     position:relative;
-    border-radius: 2px;
+    border-radius: 5px;
     top: 10px;
     left: 10px;
     height: calc(100% - 25px);
@@ -344,6 +339,14 @@ header ul li a:hover{
     background-color: white
     
   }
+
+  .screen img{
+    width: 100%;
+    height:100%;
+    object-fit: fill;
+    border-radius: 5px;
+  }
+
   .bottom-strip{
     display: flex;
     align-items: center;
@@ -352,18 +355,16 @@ header ul li a:hover{
     height: 100%;
     border-radius: 0 0 15px 15px;
     position: relative;
-    top: 24px;
+    top: 13px;
     width: 100%;
     height: 15px;
-    background-color: #2e2724;
-    border-top: 1px solid #000000;
-  
   }
 
   span{
     position: relative;
+    bottom: 3px;
     text-align: center;
-    font-size: 7px;
+    font-size: 8px;
     color:white;
   }
 
@@ -399,3 +400,4 @@ header ul li a:hover{
   .four{
     background-color: brown;
   }
+
