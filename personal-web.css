@@ -405,7 +405,7 @@ header ul li a:hover{
     height:100vh;
   }
   .quote{
-    padding-top: 4em;
+    padding-top: 20em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -413,7 +413,7 @@ header ul li a:hover{
     opacity: 60%;
   }
   .project-title{
-    
+    margin-bottom: 3em;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -436,45 +436,102 @@ header ul li a:hover{
 .row1{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  height:100%;
-  background-color: #cbcbcb;
-}
-
-.row1 div{
-  
-  width: 18em;
-  height: 15em;
-  background-color: #000000;
-  border-radius: 6px;
-}
-
-.column1{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
+  height:50vh;
   background-color: #cbcbcb;
-
 }
 
-.column1 div{
-  margin-top: 1em;
-  width: 37em;
+
+.project-1{
+  width: 40em;
   height: 25em;
+  margin-left: 2em;
+  margin-right:2em;
   background-color: #000000;
   border-radius: 6px;
 }
 
-.sidebar div{
-  display: flex;
-  flex-direction: column;
-  width: 18em;
-  height: 15em;
-  background-color: #4f4e4e;
-  border-radius: 6px;
-  margin-bottom: 2em;
+.image1{
+  width:100%;
+  height:70%;
+  background-color: white;
 }
+
+.project1-text{
+  width: 100%;
+  height:30%;
+  background-color: rgb(83, 83, 83);
+}
+
+.project-2{
+  width: 40em;
+  height: 25em;
+  margin-left: 2em;
+  margin-right:2em;
+  background-color: #000000;
+  border-radius: 6px;
+}
+.image2{
+  width:100%;
+  height:70%;
+  background-color: white;
+}
+
+.project2-text{
+  width: 100%;
+  height:30%;
+  background-color: rgb(83, 83, 83);
+}
+
+
+.row2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:50vh;
+  background-color: #cbcbcb;
+}
+
+.project-3{
+  width: 40em;
+  height: 25em;
+  margin-left: 2em;
+  margin-right:2em;
+  background-color: #000000;
+  border-radius: 6px;
+}
+.image3{
+  width:100%;
+  height:70%;
+  background-color: white;
+}
+
+.project3-text{
+  width: 100%;
+  height:30%;
+  background-color: rgb(83, 83, 83);
+}
+
+.project-4{
+  width: 40em;
+  height: 25em;
+  margin-left: 2em;
+  margin-right:2em;
+  background-color: #000000;
+  border-radius: 6px;
+}
+
+.image4{
+  width:100%;
+  height:70%;
+  background-color: white;
+}
+
+.project4-text{
+  width: 100%;
+  height:30%;
+  background-color: rgb(83, 83, 83);
