@@ -10,6 +10,7 @@
     height: 100vh;
     width: 100%;
     object-fit: cover;
+    background-color: #08091c;
   }
   
   section {
@@ -19,6 +20,7 @@
 
   button {
     appearance: none;
+    
     background-color: white;
     border: 2px solid #1A1A1A;
     border-radius: 15px;
@@ -162,7 +164,7 @@ header ul li a:hover{
   }
 
   .scroll:after{
-    top: 40%
+    top: 40%;
   }
 
   @keyframes scroll {
@@ -308,20 +310,25 @@ header ul li a:hover{
   0 0 2500px  rgba(253, 79, 4, 1);
 
 }
-
   /*-----------About------------- */
   .about{
     position: absolute;
     font-size: 1rem;
-    margin-top: 10em;
+    margin-top: 12em;
     width: 100%;
    height: 110vh;
-   padding: 1rem 25rem;
+   padding-left: 10em;
+   padding-right: 10em;
   }
 .about-me{
   font-size: 2rem;
 }
     
+
+
+
+
+
   /*-----Second Page Body -------------------------------------------*/
   .two{
     width: 100%;
@@ -329,7 +336,10 @@ header ul li a:hover{
     height: 30vh;
   }
 
-  /*-----Third Page Footer ------------------*/
+
+
+
+  /*-----Third Page Featured Project ------------------*/
   .three{
     background-color: #08091c;
     height: 100vh;
@@ -355,18 +365,24 @@ header ul li a:hover{
   .featured-project{
   font-size: 50px;
   padding-bottom: 0.5em;
-  width:70%
+  width:70%;
+  padding-left: 26px;
   
   }
   .featured-text{
     width:70%;
     text-overflow: ellipsis;
     overflow: hidden;
+    padding-left:2em;
   }
 
   .featured-button{
     margin-top: 1em;
+    padding-left: 2em
+    
   }
+
+  
   /*-----Latptop---------------*/ 
   
   .laptop{
@@ -444,6 +460,10 @@ header ul li a:hover{
     border-bottom-right-radius: 80% 80%;
   }
  
+
+
+
+
   /*-----Fourth Page My Projects ------------------*/
   .four{
     background-color: #08091c;
@@ -477,9 +497,12 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
   }
+
+  /*-----Filter---------------------------------------*/
   .project-filter{
   padding-top:2em;
   padding-bottom:2em;
+  margin-left:3.5em;
   display: flex;
   justify-content: flex-start;
   list-style: none;
@@ -500,11 +523,20 @@ header ul li a:hover{
   align-items: center;
   width: 100%;
   height:27.5em;
+  
   /* background-color: #cbcbcb; */
 }
 
 
 /*---------------Project 1------------------------------*/
+.project-showcase img{
+ 
+  width: 100%;
+  height:100%;
+  object-fit: fill;
+ 
+}
+
 
 .project-1{
   width: 40em;
@@ -512,19 +544,22 @@ header ul li a:hover{
   margin-left: 2em;
   margin-right:2em;
   background-color: #000000;
-  border-radius: 6px;
+  
 }
 
 .image1{
+  border-radius: 10px;
   width:100%;
   height:70%;
   background-color: white;
+  
 }
+
 
 .project1-text{
   width: 100%;
-  height:35%;
-    background-color: #0e0e32d4;
+  height:40%;
+  background-color: #0e0e32d4;
    
 }
 
@@ -533,6 +568,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 font-size: 1.5em;
+padding-top: 5px;
 }
 
 .project1-body{
@@ -544,6 +580,7 @@ font-size: 1.5em;
   align-items: center;
 }
 .project1-buttons{
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -552,13 +589,7 @@ font-size: 1.5em;
   height:50%;
 }
 
-/* button{
-  background-color:#212429;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-right: 1em;
-  font-size: 10px;
-} */
+
 /*---------------Project 2------------------------------*/
 .project-2{
   width: 40em;
@@ -576,7 +607,7 @@ font-size: 1.5em;
 
 .project2-text{
   width: 100%;
-  height:35%;
+  height:40%;
   background-color: #0e0e32d4;
 }
 
@@ -585,6 +616,7 @@ font-size: 1.5em;
   align-items: center;
   justify-content: center;
   font-size: 1.5em;
+  padding-top: 5px;
   }
   
   .project2-body{
@@ -596,6 +628,7 @@ font-size: 1.5em;
     align-items: center;
   }
   .project2-buttons{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -603,6 +636,7 @@ font-size: 1.5em;
     margin-left:5px;
     height:50%;
   }
+
 /*---------------Row 2------------------------------*/
 .row2{
   display: flex;
@@ -611,7 +645,7 @@ font-size: 1.5em;
   align-items: center;
   width: 100%;
   height:70vh;
-  /* background-color: #f00303; */
+
 }
 
 
@@ -632,7 +666,7 @@ font-size: 1.5em;
 
 .project3-text{
   width: 100%;
-  height:30%;
+  height:40%;
   background-color: #0e0e32d4;
 }
 
@@ -641,6 +675,7 @@ font-size: 1.5em;
   align-items: center;
   justify-content: center;
   font-size: 1.5em;
+  padding-top: 5px;
   }
   
   .project3-body{
@@ -652,6 +687,7 @@ font-size: 1.5em;
     align-items: center;
   }
   .project3-buttons{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -678,7 +714,7 @@ font-size: 1.5em;
 
 .project4-text{
   width: 100%;
-  height:30%;
+  height:40%;
   background-color: #0e0e32d4;
 }
 
@@ -687,6 +723,7 @@ font-size: 1.5em;
   align-items: center;
   justify-content: center;
   font-size: 1.5em;
+  padding-top: 5px;
   }
   
   .project4-body{
@@ -698,6 +735,7 @@ font-size: 1.5em;
     align-items: center;
   }
   .project4-buttons{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
