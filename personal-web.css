@@ -498,21 +498,9 @@ header ul li a:hover{
     align-items: center;
   }
 
-  /*-----Filter---------------------------------------*/
-  .project-filter{
-  padding-top:2em;
-  padding-bottom:2em;
-  margin-left:3.5em;
-  display: flex;
-  justify-content: flex-start;
-  list-style: none;
-}
+  /*-----dash---------------------------------------*/
 
-  .project-filter li{
-  display: flex;
-  margin-left: 15px;
-  font-size: 12px
-}
+  
 
 
 /*---------------Row 1------------------------------*/
