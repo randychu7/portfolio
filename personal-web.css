@@ -613,7 +613,7 @@ span{
 /*-----Fourth Page My Projects ------------------*/
 .four{
   background-color: #08091c;
-  height: 140vh;
+  height: 180vh;
 }
 .projects-wrapper{
   height:100vh;
@@ -926,7 +926,7 @@ background-color: #08091c;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 60%;
+  width: 50%;
   height:30%;
   padding: 25px;
   /* background-color:#6d6d6d; */
@@ -953,7 +953,7 @@ background-color: #08091c;
  }
 
 .profile-pic{
-  width: 40%;
+  width: 50%;
   height:100%;
   background-color: black
 }
