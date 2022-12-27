@@ -66,7 +66,8 @@
 
   /*-----Navbar-------------------------------*/ 
   header{
-    position: absolute;
+    position: sticky;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 100%;
@@ -75,6 +76,8 @@
     justify-content: space-between;
     align-items: center;
     transition: ease-in 1s;
+    background-color: #08091c
+    
 
 }
 
@@ -88,7 +91,7 @@ header .logo{
 }
 
 header ul{
-    z-index: 0;
+    
     position: -webkit-sticky;
 	position: sticky;
     display:flex;
@@ -202,9 +205,9 @@ header ul li a:hover{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    min-height: 30vh;
+    min-height: 25vh;
     text-align: center;
-    padding-top: 5em
+    padding-top: 3em
   }
   .name{
     display: flex;
@@ -213,7 +216,7 @@ header ul li a:hover{
   }
 /*----Cube --------------------------------*/
   .container{
-    margin-top: 3em;
+    margin-top: 1em;
     padding-right:20em;
     display: flex;
     justify-content: flex-end;
@@ -221,8 +224,8 @@ header ul li a:hover{
 
 .cube{
     position:relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     transform-style: preserve-3d;
     z-index: 2;
     animation: animate 40s linear infinite;
@@ -281,27 +284,27 @@ header ul li a:hover{
     width: 100%;
     height: 100%;
     background: linear-gradient(#151515,#ff4704);
-    transform: rotateY(calc(90deg* var(--i))) translateZ(74.8px);
+    transform: rotateY(calc(90deg* var(--i))) translateZ(49.5px);
     z-index: 2;
 }
 .top{
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-color: #222;
-  transform: rotateX(90deg) translateZ(75px);
+  transform: rotateX(90deg) translateZ(50px);
 }
 .top::before{
   content:'';
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;
-  height:150px;
+  width: 100px;
+  height:100px;
   background: #ff4400;
-  transform: translateZ(-250px);
+  transform: translateZ(-170px);
   filter:blur(20px);
   box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
   0 0 100px  rgba(253, 79, 4, 0.542),
@@ -312,17 +315,45 @@ header ul li a:hover{
 }
   /*-----------About------------- */
   .about{
+    display: flex;
+    justify-content: center;
     position: absolute;
     font-size: 1rem;
-    margin-top: 12em;
     width: 100%;
-   height: 110vh;
-   padding-left: 10em;
-   padding-right: 10em;
+   height: 22em;
+   background-color: rgb(255, 3, 3);
   }
-.about-me{
-  font-size: 2rem;
+ .my-expertise{
+  font-size: 25px;
+  padding-top: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+ .software-dev{
+  background-color: #ff4400;
+  height: 18em;
+  width:20em;
+  border: 2px solid white;
+ }
+ .front-end{
+  background-color: #4d2d22;
+  height: 18em;
+  width:20em;
+  border: 2px solid white;
+ }
+ .backend{
+  background-color: #4d4847;
+  height: 18em;
+  width:20em;
+  border: 2px solid white;
+ }
     
 
 
@@ -472,6 +503,7 @@ header ul li a:hover{
   .projects-wrapper{
     height:100vh;
   }
+
   .projects-wrapper button{
     display: flex;
     flex-direction: row;
@@ -491,7 +523,7 @@ header ul li a:hover{
     opacity: 60%;
   }
   .project-title{
-    margin-bottom: 1em;
+    margin-bottom: 10px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -499,7 +531,18 @@ header ul li a:hover{
   }
 
   /*-----dash---------------------------------------*/
+.line-block{
+  display: flex;
+  justify-content: center;
+}
 
+  .line{
+  width:50%;
+  height:2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
   
 
 
