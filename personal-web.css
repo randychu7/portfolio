@@ -1036,15 +1036,28 @@ background-image:linear-gradient(45deg, #160cdb, #070132)
   font-size: 24px;
   font-weight: 500;
 }
-.contact-wrapper .contact-info ul{
+.contact-wrapper ul.contact-info{
   position: relative;
-  list-style: none;
-}
-.contact-wrapper .info ul .info li{
-  position: relative;
-  list-style: none;
+  margin: 20px 0;
 }
 
+.contact-wrapper ul.contact-info li{
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.contact-wrapper ul.contact-info li span:nth-child(1){
+width: 30px;
+min-width: 30px;
+}
+
+.contact-wrapper ul.contact-info li span:nth-child(1) img{
+  max-width: 100%;
+}
 .content-contact{
   width: 100%;
   display: flex;
