@@ -285,17 +285,42 @@
                 <!---Sixth Page-------------------------------------->
                 <section class="six">
                         <div class="contact-wrapper">
-                          
+                          <div class = "info">
+                            <h2>Contact Info</h2>
+                              <ul class = "contact-info">
+                                <li>
+                                    <span><img src ="#"></span>
+                                    <span> San Antonio, Texas 78209</span>  
+                                </li>
+                                <li>
+                                  <span><img src ="#"></span>
+                                  <span> randychu7@gmail.com</span>  
+                              </li>
+                              <li>
+                                <span><img src ="#"></span>
+                                <span> 510-358-1599</span>  
+                            </li>
+                              </ul>
+                          </div>
                           <div class ="contact-me">Send a Message</div>
                                 
                           <div class="content-contact">
-                                          
+                            
                                           <form action="/send-email" method="post">
-                                            <div class = "info"></div>
-                                                  <label for="name" id="name-title">Full Name</label><br>
-                                                  <input type="text" id="name" name="name" placeholder="Enter your full name here..."><br>
+                                                  
+                                                  <div class ="full-name">
+                                                        <div class = "first-name-text">
+                                                        <label for="name" id="first-name-title">First Name</label><br>
+                                                        <input type="text" id="first-name" name="name" placeholder="First name..."><br>
+                                                        </div>
+                                                        <div class = "last-name-text">
+                                                        <label for="name" id="last-name-title">Last Name</label><br>
+                                                        <input type="text" id="last-name" name="name" placeholder="Last name..."><br>
+                                                      </div>
+                                                   </div>
+
                                                   <label for="email">Email </label><br>
-                                                  <input type="text" id="email" name="email"><br>
+                                                  <input type="text" id="email" name="email" placeholder="Enter your email adress..."><br>
                                                   <label for="message">Message</label><br>
                                                   <textarea id="message" name="message"></textarea><br>
                                                   <input type="submit" id = "button-send" value="Send">
