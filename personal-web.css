@@ -989,6 +989,8 @@ background-image:linear-gradient(45deg, #160cdb, #070132)
   justify-content: center;
 }
 
+
+/*--- Sixth Page-----------------*/
 .six{
   height: 100vh;
   background-color: #08091c;
@@ -999,7 +1001,11 @@ background-image:linear-gradient(45deg, #160cdb, #070132)
 
 .content-contact{
   width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ff4704 ;
 }
+
 .contact-wrapper{
   display: flex;
   flex-direction: column;
@@ -1013,7 +1019,9 @@ background-image:linear-gradient(45deg, #160cdb, #070132)
 }
 
 .contact-me{
-  
+  font-size: 2em;
+  padding-bottom: 1em;
+
 }
 
 form {
@@ -1022,14 +1030,34 @@ form {
   text-align: left;
 }
 
+#name{
+ margin-top: 10px;
+ 
+  
+}
 
+#email{
+  margin-top: 10px;
+  margin-bottom:10px;
+  
+}
+#message{
+  margin-bottom:10px;
+  margin-top: 10px;
+}
 
-input[type="text"], textarea {
+#button-send{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  input[type="text"], textarea {
   width: 100%;
   padding: 0.5em;
   border: 1px solid #ccc;
   border-radius: 3px;
+  color:black;
   box-sizing: border-box;
+  resize: none;
 }
 
 input[type="submit"] {

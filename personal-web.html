@@ -285,17 +285,20 @@
                 <!---Sixth Page-------------------------------------->
                 <section class="six">
                         <div class="contact-wrapper">
-                          <div class = "info"></div>
-                                <div class="content-contact">
-                                          <div class ="contact-us">Contact me!</div>
+                          
+                          <div class ="contact-me">Send a Message</div>
+                                
+                          <div class="content-contact">
+                                          
                                           <form action="/send-email" method="post">
-                                                  <label for="name">Name:</label><br>
-                                                  <input type="text" id="name" name="name"><br>
-                                                  <label for="email">Email:</label><br>
+                                            <div class = "info"></div>
+                                                  <label for="name" id="name-title">Full Name</label><br>
+                                                  <input type="text" id="name" name="name" placeholder="Enter your full name here..."><br>
+                                                  <label for="email">Email </label><br>
                                                   <input type="text" id="email" name="email"><br>
-                                                  <label for="message">Message:</label><br>
+                                                  <label for="message">Message</label><br>
                                                   <textarea id="message" name="message"></textarea><br>
-                                                  <input type="submit" value="Send">
+                                                  <input type="submit" id = "button-send" value="Send">
                                           </form>
                                 </div>
                         </div>
