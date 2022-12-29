@@ -1158,7 +1158,17 @@ textarea{
 }
 
 /*-------Page Seven---------------------------*/
-.seven{
-  height: 50vh;
-  background-color: #08091c;
+.footer-wrapper{
+  display:flex;
+  justify-content: flex-end;
+  min-height: 100vh;
+  background-color: #8088c2;
+}
+
+.footer{
+  position: relative;
+  width:100%;
+  background-color: blue;
+  height: 100px;
+
 }
