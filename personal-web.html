@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="aos-by-red.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
@@ -132,7 +133,7 @@
                 <section class="three">
                       
                               <div class ="feature-wrapper">
-                                      <div class="featured-container" data-aos="fade-up">
+                                      <div class="featured-container">
                                             <div class="featured-project">
                                                   <h2>Featured<br> Project</h2>
                                             </div>
@@ -169,11 +170,11 @@
                  <section class="four">
                          <div class = "projects-wrapper">
                                     <div class = "projects-heading">
-                                            <div class = "quote" data-aos="fade-up">
+                                            <div class = "quote">
                                                 <p>//--what have i been up to?--//</p>
                                             </div>
                                            <div class="project-title">
-                                                <h3>My Projects</h3>
+                                                <h3 class ="project-fade" data-aos="fade-up">My Projects</h3>
                                            </div>
                                            <div class="line-block">
                                               <div class="line"></div>
@@ -266,7 +267,7 @@
                              
                                     <div class="my-story">
                                                   <div class = "hello"><p>Hello</p></div>
-                                                  <div class = "my-name"> <h2>I'm <font color="#17d1ac">Randy</font> Chu</h2></div>
+                                                  <div class = "my-name"> <h2>I'm Randy Chu</h2></div>
                                                   <div class = "bio"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae fugiat eius accusantium sit dolor in culpa, 
                                                     eum neque optio corrupti alias corporis numquam facere amet. Harum nobis aliquam quaerat.</p></div>
                                                   <div class = "resume-button">
@@ -361,6 +362,15 @@
 
         </div>
 
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      
+      <script>
+          AOS.init({
+            duration: 1000,
+            once: true,
+          });
+        </script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
       integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
@@ -370,18 +380,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
     <script src="personal-web.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-    <!--Scroll script-->
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 3000,
-        once: true,
-      });
-    </script>
-
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
   </body>
 
 </html>

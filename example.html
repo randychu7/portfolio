@@ -1,74 +1,380 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>Animate On Scroll | AOS</title>
+    <title>Randy Chu</title>
     <link rel="stylesheet" href="aos-by-red.css">
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-     <style>
-     *{
-        margin: 0;
-        padding: 0;
-      }
-      body{
-        font-size: 30px;
-        font-family: sans-serif;
-        background: #ebebeb;
-      }
-      .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex-direction: column;
-      }
-      .div{
-         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-        height: 300px;
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, #1cd8d2, #93edc7);
-        color: white;
-        margin: 100px 0;
-        border-radius: 7px;
-      }
-      </style>
+     <link rel="stylesheet" href="personal-web.css" />
+     <link rel="stylesheet" href="Hover.css" />
+     <link
+     href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins"
+     rel="stylesheet"
+   />
+
   </head>
   <body>
-    <div class="container">
-<!------------------------------------------------------------>
-          <div class="div">
-            I am div 1
-          </div>
-<!--------------------------------------------------------------->
-          <div class="div" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
-            I am div 2
-          </div>
-<!-------------------------------------------------------------->
-          <div class="div" data-aos="fade-right">
-            I am div 3
-          </div>
-<!-- ------------------------------------------------------------->
-          <div class="div"  data-aos="fade-up">
-            I am div 4
-          </div>
-<!-- ------------------------------------------------------------->
-          <div class="div"  data-aos="zoom-in">
-            I am div 5
-          </div>
-<!-- ------------------------------------------------------------->
-          <div class="div" data-aos="flip-up">
-            I am div 6
-          </div>
-<!-- ------------------------------------------------------------->
-    </div>
+    <body>
+        <div class="page-wrapper">
+          
+                <!----First Page------------------------------------------------------------------------------------------------------------------------------------------------->
+                <section class="one">
+                                <!--------Nav Bar-------------------------------------------------------------------------------------------------------------------------------->
+                                <nav class="nav">
+                                    <header>
+                                        <a href="#"class = "logo">/R</a>
+                                      
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#about-me">Projects</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                        
+                                    </header>
+                                </nav>
+                      
+                            <!--------Parallax---------------------------------------------------------------------------------------------------------------------------->
+                        
+                                  <div class="parallax">
+                                        <h2 class="main-title">Explore.</h2>
+                                        <img src="images/background1.png" class="background" alt="" />
+                                        <img src="images/Background-mid.png" class="mountain" alt="" />
+                                        <img src="images/background-fore.png" class="person" alt="" />
+                                  </div>
+
+                        <!--------Scroll Down------------------------------------------------------------------------------------------------------------------------------------------------>
+                        
+                                  <div class = "container">
+                                                <div class="scroll"></div>
+                                                <div class = "scroll-down">SCROLL DOWN</div>
+                                  </div>
+                                  
+                        <!--------Name title-------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                                  <div class="content">
+                                            <div class="content-images">
+                                                <div id = "about-me">
+                                                    <h2 class="name">My Expertise</h2>
+                                                    
+                                                </div>
+                                              </div>
+
+                          <!--------Cube-------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                                  <div class = "container">
+                                      <div class = "cube">
+                                        <div class="top"></div>
+                                            
+                                            <div>
+                                              <span style="--i:0;"></span>
+                                              <span style="--i:1;"></span>
+                                              <span style="--i:2;"></span>
+                                              <span style="--i:3;"></span>
+                                            </div>
+                                      </div>
+                                  </div>
+
+                          <!--------About Me----------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <div class ="about-page">
+                                                      
+                                      <div class ="about">
+                                      
+                                            <div class ="software-dev">
+                                                          <div class="software-wrapper">
+                                                              <img src="images/computer-icon-white.png" alt="computer">
+                                                              <p><strong>Software <br>
+                                                                Development</strong></p>
+                                                          </div>
+                                                          <div class="software-text-wrapper">
+                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ex dignissimos cum tempore sit. Sequi ex dignissimos cum tempore sit. Sequi ex dignissimos cum tempore sit.</p>
+                                                          </div>
+                                            </div>
+
+                                            <div class ="front-end"> 
+                                                    <div class="frontend-wrapper">
+                                                          <img src="images/download.png" alt="computer">
+                                                      <p><strong>Frontend Dev <br>
+                                                       </strong></p>
+                                                  </div>
+                                                  <div class="frontend-text-wrapper">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ex dignissimos cum tempore sit. Sequi ex dignissimos cum tempore sit. Sequi ex dignissimos cum tempore sit.</p>
+                                                  </div>
+                                                          
+                                             </div>
+                                          
+                                            <div class ="backend">
+                                              <div class="backend-wrapper">
+                                                <img src="images/backend-icon.png" alt="computer">
+                                                <p><strong>Backend <br>
+                                                  Development</strong></p>
+                                            </div>
+                                            <div class="backend-text-wrapper">
+                                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ex dignissimos cum tempore sit. Sequi ex dignissimos cum tempore sit. Sequi ex dignissimos cum tempore sit.</p>
+                                            </div>
+                                            </div>
+                                        
+                                  </div>
+                          </div>
+                </section>
+
+
+                <!----Second Page-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <section class="two">       
+                </section>
+
+
+                 <!----Third Page--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+
+                <section class="three">
+                      
+                              <div class ="feature-wrapper">
+                                      <div class="featured-container">
+                                            <div class="featured-project">
+                                                  <h2>Featured<br> Project</h2>
+                                            </div>
+                                            <div class="featured-text">
+                                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus nobis rerum eos quae, adipisci nulla nemo soluta voluptates iusto quisquam maiores consequatur? Veritatis, sunt cum? Sit nobis minus mollitia.</p>
+                                            </div>
+                                            <div class = "featured-button">
+                                              <button type="button" class="live-demo1">Live Demo</button>
+                                              <button type="button" class="code1"> Code </button>
+                                          </div>
+                                      </div>
+                                      <!-------Laptop------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                                      <div class = "laptop-main">
+                                        
+                                            <div class="laptop">
+                                              <div class="screen">
+                                                <img src="images/switzright.png">
+                                              </div>
+                                              <div class="bottom-strip">
+                                                <span>Macbook Pro</span></div>
+                                                
+                                            </div>
+                                            <div class ="keyboard">
+                                              <div class="notch"></div>
+                                            </div>
+                                            <div class ="base"></div>
+                                      </div>
+                              </div>
+                      
+                </section>
+                 <!----Fourth Page------------------------------------->
+
+                 <section class="four">
+                         <div class = "projects-wrapper">
+                                    
+                            <div class = "projects-heading" data-aos= "fade-up">
+                                            <div class = "quote">
+                                                <p>//--what have i been up to?--//</p>
+                                            </div>
+                                           <div class="project-title">
+                                                <h3>My Projects</h3>
+                                           </div>
+                                           <div class="line-block">
+                                              <div class="line"></div>
+                                          </div>
+                                    </div>
+
+                                    <div class="project-showcase" data-aos= "fade-up" >
+
+                                                    <div class="row1">
+                                                            <div class="project-1">
+                                                                  <div class="image1"><img src="images/switzleft.png"></div>
+                                                                  <div class="project1-text">
+                                                                        <div class = "project1-description">
+                                                                            <p class="project1-title">Project 1</p>
+                                                                            <p class="project1-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate libero temporibus cum.</p>
+                                                                        </div>
+                                                                        <div class = "project1-buttons">
+                                                                            <button type="button" class="live-demo">Live Demo</button>
+                                                                            <button type="button" class="code"> Code </button>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="project-2">
+                                                                  <div class="image2"><img src="images/switzleft.png"></div>
+                                                                  <div class="project2-text">
+                                                                        <div class = "project2-description">
+                                                                            <p class="project2-title">Project 2</p>
+                                                                            <p class="project2-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate libero temporibus cum.</p>
+                                                                        </div>
+
+                                                                      <div class = "project2-buttons">
+                                                                            <button type="button" class="live-demo">Live Demo</button>
+                                                                            <button type="button" class="code"> Code </button>
+                                                                      </div>
+
+                                                                </div>
+                                                          </div>
+                                                  </div>
+
+
+                                                  <div class="row2">
+                                                            <div class="project-3">
+                                                                    <div class="image3"><img src="images/switzleft.png"></div>
+                                                                    <div class="project3-text">
+                                                                        
+                                                                      <div class = "project3-description">
+                                                                                <p class="project3-title">Project 3</p>
+                                                                                <p class="project3-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate libero temporibus cum.</p>
+                                                                            </div>
+
+                                                                          <div class = "project3-buttons">
+                                                                                <button type="button" class="live-demo">Live Demo</button>
+                                                                                <button type="button" class="code"> Code </button>
+                                                                          </div>
+
+                                                                    </div>              
+                                                            </div>
+                                                          
+                                                            <div class="project-4">
+                                                                    <div class="image4"><img src="images/switzleft.png"></div>
+                                                                    <div class="project4-text">
+
+                                                                          <div class = "project4-description">
+                                                                                <p class="project4-title">Project 4</p>
+                                                                                <p class="project4-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate libero temporibus cum.</p>
+                                                                              </div>
+
+                                                                          <div class = "project4-buttons">
+                                                                                <button type="button" class="live-demo">Live Demo</button>
+                                                                                <button type="button" class="code"> Code </button>
+                                                                          </div>
+                                                                          
+                                                                    </div>
+                                                          </div>
+                                                  </div>
+                                    
+                                    </div>
+                              
+
+                                
+
+                         </div>
+                 </section>
+
+
+                <!-----Fifth Page-------------------------------------->
+                 <section class="five">
+                 <div class ="background-gradient">
+                          <div class="story-wrapper">
+                             
+                                    <div class="my-story">
+                                                  <div class = "hello"><p>Hello</p></div>
+                                                  <div class = "my-name"> <h2>I'm Randy Chu</h2></div>
+                                                  <div class = "bio"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae fugiat eius accusantium sit dolor in culpa, 
+                                                    eum neque optio corrupti alias corporis numquam facere amet. Harum nobis aliquam quaerat.</p></div>
+                                                  <div class = "resume-button">
+                                                        <button type="button" class="resume">Resume</button>
+                                                </div>
+                                    </div>
+
+                                    <div class="profile-pic">
+                                      <div class ="pic"><img src="images/profilepic.png"></div>
+                                    </div>
+                              
+                          </div>
+                        </div>
+                </section>
+
+
+                <!---Sixth Page-------------------------------------->
+                <section class="six">
+                        <div class="contact-wrapper">
+                                  <div class = "info">
+                                    <h2>Contact Info</h2>
+                                      <ul class = "contact-info">
+                                                <li>
+                                                    <span><img src ="images/location.png"></span>
+                                                    <span> San Antonio, Texas 78209</span>  
+                                                </li>
+                                                <li>
+                                                  <span><img src ="images/emailicon.png"></span>
+                                                  <span> randychu7@gmail.com</span>  
+                                              </li>
+                                              <li>
+                                                <span><img src ="images/phoneicon1.png"></span>
+                                                <span> 510-358-1599</span>  
+                                            </li>
+                                      </ul>
+                                  </div>
+                                 
+                                  <div class ="contact-me">Send a Message</div>
+                               
+                                  <div class="content-contact">
+                                    
+                                                  <form action="/send-email" method="post">
+                                                          
+                                                          <div class ="full-name">
+                                                                <div class = "first-name-text">
+                                                                <label for="name" id="first-name-title">First Name</label><br>
+                                                                <input type="text" id="first-name" name="name" placeholder="First name"><br>
+                                                                </div>
+                                                                <div class = "last-name-text">
+                                                                <label for="name" id="last-name-title">Last Name</label><br>
+                                                                <input type="text" id="last-name" name="name" placeholder="Last name"><br>
+                                                              </div>
+                                                          </div>
+
+                                                          <label for="email">Email </label><br>
+                                                          <input type="text" id="email" name="email" placeholder="Enter your email adress"><br>
+                                                          <label for="message">Message</label><br>
+                                                          <textarea id="message" name="message" placeholder="Write your message here "></textarea><br>
+                                                          <input type="submit" id = "button-send" value="Send">
+                                                  </form>
+                                        </div>
+                        </div>
+                  </section>
+
+                  <!--Footer------------------------------------------------->
+                  
+                    <div class = "footer-wrapper">
+                        <div class = "footer">
+                          <div class = "waves">
+                                <div class = "wave" id="wave1"></div>
+                                <div class = "wave" id="wave2"></div>
+                                <div class = "wave" id="wave3"></div>
+                                <div class = "wave" id="wave4"></div>
+                              </div>
+                          <ul class = "social-icon">
+                            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                          </ul>
+                          <ul class = "menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                          </ul>
+                          <p>&#169 2022 Made By Randy Chu | All Rights Reserved</p>
+                    </div>
+                 
+                
+                
+
+        </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 3000,
+        duration: 2000,
         once: true,
       });
     </script>
-  </body>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+  integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+  crossorigin="anonymous"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+<script src="personal-web.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</body>
 </html>
