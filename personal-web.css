@@ -372,6 +372,7 @@ white-space:pre-wrap;
 /* background-color: #383838; */
 padding: 20px;
 margin-left:5px;
+padding-top:50px;
 }
 
 
@@ -418,6 +419,7 @@ width:80%;
 /* background-color: #383838; */
 padding: 20px;
 margin-left:5px;
+padding-top:50px;
 }
 
 
@@ -462,6 +464,7 @@ width:80%;
 /* background-color: #383838; */
 padding: 20px;
 margin-left:25px;
+padding-top:50px;
 }
 
 
@@ -1035,6 +1038,7 @@ background-image:linear-gradient(45deg, #160cdb, #070132)
   color:white;
   font-size: 24px;
   font-weight: 500;
+  margin-left:20px;
 }
 .contact-wrapper ul.contact-info{
   position: relative;
@@ -1045,18 +1049,27 @@ background-image:linear-gradient(45deg, #160cdb, #070132)
   position: relative;
   list-style: none;
   display: flex;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .contact-wrapper ul.contact-info li span:nth-child(1){
 width: 30px;
 min-width: 30px;
+
 }
 
 .contact-wrapper ul.contact-info li span:nth-child(1) img{
-  max-width: 100%;
+  max-width: 150%;
+  
+}
+
+.contact-wrapper ul.contact-info li span:nth-child(2){
+margin-left:13px;
+font-weight:300;
+font-size: 11px;
+
 }
 .content-contact{
   width: 100%;
@@ -1068,10 +1081,12 @@ min-width: 30px;
 
 
 .contact-me{
-  font-size: 2em;
-  padding-bottom: 1em;
-
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 21px;
+  
 }
+
 
 form {
   width: 50%;
@@ -1140,4 +1155,10 @@ input[type="submit"]:hover {
 
 textarea{
   height:10em;
+}
+
+/*-------Page Seven---------------------------*/
+.seven{
+  height: 50vh;
+  background-color: #08091c;
 }
