@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -129,9 +130,9 @@
                  <!----Third Page--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
 
                 <section class="three">
-                      <div class="feature-gradiant">
+                      
                               <div class ="feature-wrapper">
-                                      <div class="featured-container">
+                                      <div class="featured-container" data-aos="fade-up">
                                             <div class="featured-project">
                                                   <h2>Featured<br> Project</h2>
                                             </div>
@@ -161,14 +162,14 @@
                                             <div class ="base"></div>
                                       </div>
                               </div>
-                      </div>
+                      
                 </section>
                  <!----Fourth Page------------------------------------->
 
                  <section class="four">
                          <div class = "projects-wrapper">
                                     <div class = "projects-heading">
-                                            <div class = "quote">
+                                            <div class = "quote" data-aos="fade-up">
                                                 <p>//--what have i been up to?--//</p>
                                             </div>
                                            <div class="project-title">
@@ -370,7 +371,16 @@
     <script src="personal-web.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    
+    <!--Scroll script-->
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
 
   </body>
 

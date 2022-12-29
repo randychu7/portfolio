@@ -20,11 +20,11 @@ section {
 button {
   appearance: none;
   
-  background-color: white;
+  background-color: #3586ff;
   border: 2px solid #1A1A1A;
-  border-radius: 15px;
+  border-radius: 5px;
   box-sizing: border-box;
-  color: #3B3B3B;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -51,8 +51,8 @@ button:disabled {
 }
 
 button:hover {
-  color: #fff;
-  background-color: #1A1A1A;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
@@ -668,8 +668,8 @@ margin-bottom: 25px;
 
 .line{
 width:50%;
-height:2px;
-background-color: rgb(255, 255, 255);
+height:3px;
+background-color: #3586ff;
 border-radius: 10px;
 margin-bottom: 10px;
 opacity: 60%;
@@ -684,7 +684,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 width: 100%;
-height:27.5em;
+height:28.5em;
 
 /* background-color: #cbcbcb; */
 }
@@ -692,18 +692,25 @@ height:27.5em;
 
 /*---------------Project 1------------------------------*/
 .project-showcase img{
-
+display:block;
 width: 100%;
 height: 100%;
 object-fit: cover;
 border-top-left-radius: 10px 10px;
 border-top-right-radius: 10px 10px;
+transition: 0.2s;
 }
 
+.project-showcase img:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  overflow: hidden;
+  object-fit: cover;
+}
 
 .project-1{
 width: 40em;
-height: 25em;
+height: 27em;
 margin-left: 2em;
 margin-right:2em;
 /* background-color: #000000; */
@@ -723,9 +730,9 @@ border-top-right-radius: 10px 10px;
 .project1-text{
 width: 100%;
 height:40%;
-background-color: #0e0e32d4;
-border-bottom-left-radius: 30% 80%;
-border-bottom-right-radius: 30% 80%;
+background-color: #1a1d58;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 }
 
 .project1-title{
@@ -758,7 +765,7 @@ height:50%;
 /*---------------Project 2------------------------------*/
 .project-2{
 width: 40em;
-height: 25em;
+height: 27em;
 margin-left: 2em;
 margin-right:2em;
 /* background-color: #000000; */
@@ -775,9 +782,9 @@ border-top-right-radius: 10px 10px;
 .project2-text{
 width: 100%;
 height:40%;
-background-color: #0e0e32d4;
-border-bottom-left-radius: 30% 80%;
-border-bottom-right-radius: 30% 80%;
+background-color: #1a1d58;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 }
 
 .project2-title{
@@ -821,7 +828,7 @@ height:70vh;
 /*---------------Project 3------------------------------*/
 .project-3{
 width: 40em;
-height: 25em;
+height: 27em;
 margin-left: 2em;
 margin-right:2em;
 /* background-color: #000000; */
@@ -838,9 +845,9 @@ border-top-right-radius: 10px 10px;
 .project3-text{
 width: 100%;
 height:40%;
-background-color: #0e0e32d4;
-border-bottom-left-radius: 30% 80%;
-border-bottom-right-radius: 30% 80%;
+background-color: #1a1d58;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 }
 
 .project3-title{
@@ -872,7 +879,7 @@ padding-top: 5px;
 /*---------------Project 4------------------------------*/
 .project-4{
 width: 40em;
-height: 25em;
+height: 27em;
 margin-left: 2em;
 margin-right:2em;
 border-radius: 6px;
@@ -889,9 +896,9 @@ border-top-right-radius: 10px 10px;
 .project4-text{
 width: 100%;
 height:40%;
-background-color: #0e0e32d4;
-border-bottom-left-radius: 30% 80%;
-border-bottom-right-radius: 30% 80%;
+background-color: #1b1b5fd4;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 
 }
 
@@ -931,7 +938,8 @@ background-color: #08091c;
 position:relative;
 height: 80vh;
 transform: skewY(-5deg);
-background-image:linear-gradient(45deg, #160cdb, #070132) 
+
+background-image:linear-gradient(335deg, #3586ff, #1a1d58) 
 
 }
 
@@ -1025,7 +1033,7 @@ background-image:linear-gradient(45deg, #160cdb, #070132)
   left: -150px;
   width: 300px;
   height: calc(100% - 90px);
-  background:rgb(12, 15, 230);
+  background:#3586ff;
   z-index: 1;
   padding: 40px;
   display: flex;
@@ -1162,8 +1170,8 @@ textarea{
   display:flex;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 100vh;
-  background-color: #8088c2;
+  min-height: 40vh;
+  background-color: #08091c;
 }
 
 .footer{
@@ -1173,7 +1181,7 @@ textarea{
   flex-direction:column;
   position: relative;
   width:100%;
-  background-color: rgb(0, 0, 0);
+  background-color: #3586ff;
   min-height: 100px;
   padding: 20px 50px;
 
@@ -1188,6 +1196,7 @@ textarea{
   justify-content: center;
   align-items: center;
   margin: 10px 0;
+  transition: 0.5s;
 }
 
 .footer .social-icon li,
@@ -1232,6 +1241,83 @@ textarea{
   margin-bottom: 15px;
 }
 
-.footer .wave{
+.footer .wave{ 
+  position:absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(images/wave.png);
+  background-size: 1000px 100px;
+}
 
+
+
+.footer .wave#wave1{
+z-index: 1000;
+opacity: 1;
+bottom: 0;
+animation: animateWave 14s linear infinite;
+
+}
+
+@keyframes animateWave 
+{
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+.footer .wave#wave2{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 7s linear infinite;
+  
+  }
+  @keyframes animateWave_02 
+{
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+.footer .wave#wave3{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave_03 10s linear infinite;
+  
+  }
+  @keyframes animateWave_03 
+{
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+.footer .wave#wave4{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_04 8s linear infinite;
+  
+  }
+  @keyframes animateWave_04 
+{
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
 }
