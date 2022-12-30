@@ -1165,7 +1165,7 @@ textarea{
   display:flex;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 40vh;
+  min-height: 50vh;
   background-color: #08091c;
 }
 
