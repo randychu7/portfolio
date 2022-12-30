@@ -21,7 +21,7 @@ button {
   appearance: none;
   
   background-color: #3586ff;
-  border: 2px solid #1A1A1A;
+  border: 2px solid #3586ff;
   border-radius: 5px;
   box-sizing: border-box;
   color: #ffffff;
@@ -645,12 +645,32 @@ span{
   font-size: 10px;
   opacity: 60%;
 }
+
 .project-title{
   margin-bottom: 10px;
   font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.highlight{
+
+  
+  background: linear-gradient(to right, #EBF2F1 20%, #B0D9D5 40%, #7595BF 60%, #EBF2F1 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 /*-----dash---------------------------------------*/
@@ -739,6 +759,7 @@ padding-top: 5px;
 }
 
 .project1-body{
+padding-top: 10px;
 font-size: 10px;
 display: flex;
 padding-left: 3em;
@@ -791,6 +812,7 @@ padding-top: 5px;
 }
 
 .project2-body{
+  padding-top: 10px;
   font-size: 10px;
   display: flex;
   padding-left: 3em;
@@ -854,6 +876,7 @@ padding-top: 5px;
 }
 
 .project3-body{
+  padding-top: 10px;
   font-size: 10px;
   display: flex;
   padding-left: 3em;
@@ -898,6 +921,7 @@ border-bottom-right-radius: 10px;
 }
 
 .project4-title{
+padding-top: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -934,7 +958,7 @@ position:relative;
 height: 80vh;
 transform: skewY(-5deg);
 
-background-image:linear-gradient(335deg, #3586ff, #1a1d58) 
+background-image:linear-gradient(335deg, #B0D9D5, #466FA6) 
 
 }
 
@@ -1006,8 +1030,6 @@ background-image:linear-gradient(335deg, #3586ff, #1a1d58)
   
 }
 
-
-
 .contact-wrapper{
   position: relative;
   display: flex;
@@ -1028,7 +1050,7 @@ background-image:linear-gradient(335deg, #3586ff, #1a1d58)
   left: -150px;
   width: 300px;
   height: calc(100% - 90px);
-  background:#3586ff;
+  background:#7595BF;
   z-index: 1;
   padding: 40px;
   display: flex;
@@ -1081,15 +1103,12 @@ font-size: 11px;
   /* background-color: #ff4704 ; */
 }
 
-
-
 .contact-me{
   font-size: 25px;
   font-weight: 300;
   margin-bottom: 21px;
   
 }
-
 
 form {
   width: 50%;
@@ -1105,7 +1124,6 @@ form {
 #first-name{
   width:90%
 }
-
 
 #email{
   margin-top: 10px;
@@ -1128,8 +1146,6 @@ form {
   flex-direction: row;
   justify-content: space-between;
   margin-top:5px;
-  
-  
 }
 
   input[type="text"], textarea {
@@ -1160,7 +1176,11 @@ textarea{
   height:10em;
 }
 
-/*-------Page Seven---------------------------*/
+
+
+
+
+/*-------Footer---------------------------*/
 .footer-wrapper{
   display:flex;
   justify-content: flex-end;
