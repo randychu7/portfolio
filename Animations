@@ -1,5 +1,20 @@
 Animations
 Fade animations:
+Header:
+  <link rel="stylesheet" href="aos-by-red.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+Script:
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      });
+    </script>
+    
+Format
+<div data-aos="fade-in" data-aos-duration="4000"></div>
 
 fade
 fade-up
