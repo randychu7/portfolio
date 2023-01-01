@@ -78,7 +78,7 @@ header{
 
 header.sticky{
 padding: 15px;
-background: #fff;
+background: rgb(255, 255, 255);
 }
 
 
@@ -978,7 +978,7 @@ background-color: #08091c;
 position:relative;
 height: 100vh;
 transform: skewY(-5deg);
-background-image:linear-gradient(335deg, #B0D9D5, #466FA6) 
+background-image:linear-gradient(335deg, #011570, #2984fc) 
 
 }
 
@@ -1071,7 +1071,7 @@ background-image:linear-gradient(335deg, #B0D9D5, #466FA6)
   left: -150px;
   width: 300px;
   height: calc(100% - 90px);
-  background:#7595BF;
+  background:#3586ff;
   z-index: 1;
   padding: 40px;
   display: flex;
