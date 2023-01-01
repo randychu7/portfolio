@@ -20,6 +20,7 @@ section {
 button {
   appearance: none;
   background-color: #3586ff;
+  border-color: #3586ff;
   border-radius: 5px;
   box-sizing: border-box;
   color: #ffffff;
@@ -76,20 +77,24 @@ header{
 }
 
 header.sticky{
-padding: 5px 100px;
+padding: 20px;
 background: #fff;
 }
 
+
+header.sticky .logo,
 header.sticky ul li a{
-  
+color:#000;
 }
+
+
 
 header .logo{
   position: relative;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 40px;
   font-size: 35px;
   letter-spacing: 2px;
   transition:0.6s;
@@ -215,7 +220,7 @@ left:50%
   align-items: flex-start;
   min-height: 25vh;
   text-align: center;
-  padding-top: 6em;
+  padding-top: 12em;
 }
 .name{
   display: flex;
@@ -224,7 +229,7 @@ left:50%
 }
 /*----Cube --------------------------------*/
 .container{
-  margin-top: 10px;
+  margin-top: 10em;
   padding-right:15em;
   display: flex;
   justify-content: flex-end;
@@ -337,7 +342,7 @@ box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 12em;
+margin-top: 14em;
 }
 
 /*-----------Software Dev block 1-------*/
