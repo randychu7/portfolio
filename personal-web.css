@@ -1061,6 +1061,7 @@ background-image:linear-gradient(335deg, #B0D9D5, #466FA6)
   flex-direction: column;
   min-width: 700px;
   min-height: 550px;
+  border-radius: 10px;
   z-index: 1000;
 }
 
@@ -1076,6 +1077,7 @@ background-image:linear-gradient(335deg, #B0D9D5, #466FA6)
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  border-radius: 10px;
   box-shadow: 0 20px 25px#000000;
 
 }
