@@ -131,11 +131,15 @@ header ul li a{
 
 header ul li a.active,
 header ul li a:hover{
- background-color: rgb(255, 255, 255);
- color: #000000;
+background-color: rgb(255, 255, 255);
+color: #000000;
 transition: ease-in 0.3s;
+
 }
- 
+#github:hover{
+filter: brightness(0) invert(1);
+}
+
 /*---Parallax------------------------------------------------*/
 .parallax{
   height: 100vh;
@@ -499,7 +503,7 @@ padding-top:50px;
   margin-top: -5px;
   width: 100%;
   background-color: #08091c;
-  
+  height: 30vh;
 }
 
 
@@ -1026,6 +1030,7 @@ background-image:linear-gradient(335deg, #011570, #2984fc)
   width:50em;
   padding-top:10px
  }
+
 
 .profile-pic{
   width: 50%;
