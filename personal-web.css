@@ -1,10 +1,36 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
+
+
+/*--------Media Queries--------*/
+body{
+  width:100%;
+}
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) { }
+
+
+@media (min-width: 992px) { ... }
+
+
+@media (min-width: 1200px) { ... }
+
+
+
+
+
+
+
 
 .page-wrapper {
   height: 100vh;
