@@ -11,7 +11,6 @@
 
 .page-wrapper {
   height: 100vh;
-
   background-color: #08091c;
 }
 
@@ -69,9 +68,6 @@ header{
   left: 0;
   width: 100%;
   height:8%;
-
-
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -356,162 +352,59 @@ box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
 }
 
 
-/*-----------About------------- */
+/*-----------My Expertise-------------*/
 #expertise-row{
 height:40%;
-width:80%;
+width:80%; 
+
 }
 
 .expertise-box{
-  height:40%;
-  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+  background-color: rgb(215, 20, 20);
+ 
 }
 
+/*--Skills Box attributes--*/
 .box-wrapper{
-  
-  display: flex;
-  height: 100%;
+  display:flex;
+  justify-content: end;
+  align-items: flex-end;
+  width:100%;
+  height: 70%;
+  background-color: #011570;
 }
+
 
 .box{
   margin-top:1em;
   border: 3px solid white;
   height: 80%;
+  width:50%;
   background-color: #222;
 }
 /*-----------Software Dev block 1-------*/
 
-.software-dev{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background-color: #ff4400; */
-  height: 85%;
-  width:30%;
-  border: 1px solid white;
-  padding-left: 8px;
-  }
-  
-  .software-wrapper{
-  font-size: 20px;
-  font-weight: 400;
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-   height:30%;
-   width:80%;
-   padding-left:5px;
-   /* background-color: #000000; */
-  }
-  
-  .software-wrapper img{
-  width:40%;
-  }
-  
-  .software-text-wrapper{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 11px;
-  height:100%;
-  
-  background-color: #383838;
-  padding: 20px;
-  margin-left:25px;
-  padding-top:50px;
-  }
-
-
-/*-----------Frontend block 2-------*/
-
-.frontend{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff4400;
-  height: 85%;
-  width:30%;
-  border: 1px solid white;
-  padding-left: 8px;
-  }
-  
-  .frontend-wrapper{
-  font-size: 20px;
-  font-weight: 400;
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-   height:100%;
-   width:80%;
-   padding-left:5px;
-   /* background-color: #000000; */
-  }
-  
-  .frontend-wrapper img{
-  width:20%;
-  }
-  
-  .frontend-text-wrapper{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 11px;
+.icons{
+  width:100%;
   height:40%;
-  width:80%;
-  /* background-color: #383838; */
-  padding: 20px;
-  margin-left:25px;
-  padding-top:50px;
-  }
-
-
-/*---------Backend block 3----------*/
-
-.backend{
-display:flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-/* background-color: #ff4400; */
-height: 85%;
-width:30%;
-border: 1px solid white;
-padding-left: 8px;
+  background-color: burlywood;
 }
 
-.backend-wrapper{
-font-size: 20px;
-font-weight: 400;
-display:flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
- height:30%;
- width:80%;
- padding-left:5px;
- /* background-color: #000000; */
+.information{
+  width:100%;
+  height:60%;
+  background-color: darkorchid;
 }
 
-.backend-wrapper img{
-width:40%;
-}
 
-.backend-text-wrapper{
-display:flex;
-justify-content: center;
-align-items: center;
-font-size: 11px;
-height:40%;
-width:80%;
-/* background-color: #383838; */
-padding: 20px;
-margin-left:25px;
-padding-top:50px;
-}
+
+
+
 
 
 
