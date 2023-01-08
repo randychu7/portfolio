@@ -365,7 +365,7 @@ width:80%;
   align-items: center;
   width:100%;
   height:100%;
-  background-color: rgb(215, 20, 20);
+  /* background-color: rgb(215, 20, 20); */
  
 }
 
@@ -376,39 +376,42 @@ width:80%;
   align-items: flex-end;
   width:100%;
   height: 70%;
-  background-color: #011570;
+  /* background-color: #011570; */
 }
 
 
 .box{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top:1em;
   border: 3px solid white;
   height: 80%;
-  width:50%;
-  background-color: #222;
+  width:60%;
+  /* background-color: #222; */
+
 }
-/*-----------Software Dev block 1-------*/
+
+.box img{
+  width: 30%;
+  height: 100%;
+}
+
+/*-------Expertise Block-------*/
 
 .icons{
-  width:100%;
+  width:60%;
   height:40%;
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
 
 .information{
-  width:100%;
-  height:60%;
-  background-color: darkorchid;
+  width:80%;
+  height:100%;
+
+  /* background-color: darkorchid; */
 }
-
-
-
-
-
-
-
-
-
 
 
 /*-----Second Page Body -------------------------------------------*/

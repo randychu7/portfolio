@@ -10,7 +10,7 @@ timeline
   .fromTo(".background", { y: -50 }, { y: 0, duration: 10 }, "-=10")
   .to(".content", 10, { top: "0%" }, "-=10")
   .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 4 })
-  .fromTo(".about-page", { opacity: 0 }, { opacity: 1, duration: 4 })
+  .fromTo(".expertise-box", { opacity: 0 }, { opacity: 1, duration: 4 })
   .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 4 });
   
 
