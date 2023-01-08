@@ -20,7 +20,7 @@ button {
   appearance: none;
   background-color: #3586ff;
   border-color: #3586ff;
-  border-radius: 5px;
+  border-radius:20px !important;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -226,6 +226,10 @@ left:50%
 
 
 /*----My Expertise------------------------------------------*/
+.page-one{
+  height:100%;
+}
+
 .content {
   width: 100%;
   background: #08091c;
@@ -353,13 +357,9 @@ box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
 
 
 /*-----------My Expertise-------------*/
-#expertise-row{
-height:40%;
-width:80%; 
-
-}
 
 .expertise-box{
+  margin-top:1em;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -388,47 +388,47 @@ width:80%;
   margin-top:1em;
   border: 3px solid white;
   height: 80%;
-  width:60%;
+  width:100%;
   /* background-color: #222; */
 
 }
 
 .box img{
-  width: 30%;
+  width: 25%;
   height: 100%;
+}
+
+.information{
+  padding-left: 25px;
+  padding-right:25px;
 }
 
 /*-------Expertise Block-------*/
 
 .icons{
-  width:60%;
-  height:40%;
+  text-align: center;
+  width:100%;
+  height:100%;
+  font-size: 20px;
   /* background-color: burlywood; */
 }
 
 .information{
-  width:80%;
+  width:100%;
   height:100%;
 
   /* background-color: darkorchid; */
 }
 
-
-/*-----Second Page Body -------------------------------------------*/
-.two{
-  margin-top: -5px;
-  width: 100%;
+.spacer{
+  height:110vh;
   background-color: #08091c;
-  height: 30vh;
 }
 
-
-
-
 /*-----Third Page Featured Project ------------------*/
-.three{
+.page-3{
   background-color: #08091c;
-  height: 110vh;
+  height: 100%;
   width: 100%;
   display:flex;
   justify-content: center;
@@ -478,6 +478,12 @@ padding-left: 26px;
 
 
 /*-----Latptop---------------*/ 
+.feature-wrapper{
+  width:100%;
+  height:40%;
+  background-color: firebrick;
+}
+
 
 .laptop{
   width: 460px;
@@ -495,7 +501,6 @@ padding-left: 26px;
   height: calc(100% - 25px);
   width: calc(100% - 20px);
   /* background-color: white */
-  
 }
 
 .screen img{
@@ -526,9 +531,11 @@ span{
   color:white;
 }
 
+
 .keyboard{
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 15px;
   width: 530px;
   background-color: #3A3F49;
@@ -554,7 +561,9 @@ span{
   border-bottom-right-radius: 80% 80%;
 }
 
-
+@media  () {
+  
+}
 
 
 
