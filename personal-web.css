@@ -471,10 +471,25 @@ padding-left: 26px;
 .featured-button{
   margin-top: 1em;
   padding-left: 2em
-  
-  
 }
 
+
+.highlight{
+  background: linear-gradient(to right, #EBF2F1 20%, #B0D9D5 40%, #7595BF 60%, #EBF2F1 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
 
 
 /*-----Latptop---------------*/ 
@@ -573,7 +588,13 @@ span{
   height: 200vh;
 }
 .projects-wrapper{
-  height:130vh;
+  height:100vh;
+}
+
+.projects-heading{
+  height:100%;
+  width:100%;
+
 }
 
 .projects-wrapper button{
@@ -602,41 +623,15 @@ span{
   justify-content: center;
   align-items: center;
 }
-
-.highlight{
-
-  
-  background: linear-gradient(to right, #EBF2F1 20%, #B0D9D5 40%, #7595BF 60%, #EBF2F1 80%);
-  background-size: 200% auto;
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 2s linear infinite;
+.nav-projects{
+  margin-bottom:3em;
+  font-size:10px;
 }
 
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
-}
-
-/*-----dash---------------------------------------*/
-.line-block{
-display: flex;
-justify-content: center;
-margin-bottom: 25px;
-}
-
-
-.line{
-width:50%;
-height:3px;
-background-color: #3586ff;
-border-radius: 10px;
-margin-bottom: 10px;
-opacity: 60%;
+.nav-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
