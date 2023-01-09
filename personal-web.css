@@ -394,7 +394,7 @@ box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
 }
 
 .box img{
-  width: 25%;
+  width: 30%;
   height: 100%;
 }
 
@@ -648,6 +648,7 @@ span{
   width:100%;
   margin-left: 2em;
 }
+
 .nav-item button:hover{
   background-color: white;
   color: black;
