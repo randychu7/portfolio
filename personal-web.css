@@ -452,12 +452,11 @@ box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
   flex-direction: column;
   justify-content: center;
   width: 50%;
-
 }
-.featured-project{
-font-size: 50px;
-padding-bottom: 0.5em;
-width:70%;
+
+.featured-project h2{
+font-size: 7em;
+width:100%;
 padding-left: 26px;
 
 }
