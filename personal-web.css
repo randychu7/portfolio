@@ -592,9 +592,10 @@ span{
 }
 
 .projects-heading{
+
   height:100%;
   width:100%;
-
+  background-color: darkviolet;
 }
 
 .projects-wrapper button{
@@ -626,12 +627,30 @@ span{
 .nav-projects{
   margin-bottom:3em;
   font-size:10px;
+  background-color: #ff4400;
 }
 
 .nav-item{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1em;
+ 
+}
+
+#myTab{
+  display: flex;
+  justify-content: center;
+  margin-right: 5em;
+}
+
+.nav-projects{
+  width:100%;
+  margin-left: 2em;
+}
+.nav-item button:hover{
+  background-color: white;
+  color: black;
 }
 
 
@@ -670,7 +689,7 @@ transition: 0.2s;
 
 .project-1{
 width: 40em;
-height: 27em;
+height: 30em;
 margin-left: 2em;
 margin-right:2em;
 /* background-color: #000000; */
@@ -726,7 +745,7 @@ height:50%;
 /*---------------Project 2------------------------------*/
 .project-2{
 width: 40em;
-height: 27em;
+height: 30em;
 margin-left: 2em;
 margin-right:2em;
 /* background-color: #000000; */
