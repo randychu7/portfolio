@@ -1,5 +1,11 @@
+"use strict";
+
+// IFFE
+(() => {
 
 
+
+  
 
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
@@ -26,4 +32,7 @@ let scene = new ScrollMagic.Scene({
   .setPin("section")
   .addTo(controller);
 
-  
+
+
+
+})();
