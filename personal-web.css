@@ -667,6 +667,11 @@ width:100%;
 .project-showcase{
   width:100%;
   height:100%;
+  width: 100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project-showcase img{
 display:block;
@@ -685,6 +690,9 @@ transition: 0.2s;
   object-fit: cover;
 }
 
+
+
+
 /*----- Project Cube Size-----------*/
 
 .project-cube {
@@ -694,7 +702,7 @@ width: 35%;
 }
 
 .num2{
-  background-color: #ccc;
+  /* background-color: #ccc; */
   height: 100%;
   width: 100%;
 }
