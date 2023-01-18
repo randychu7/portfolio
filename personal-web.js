@@ -42,17 +42,26 @@ let projects = [
   {id: 1, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
   {id: 2, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
   {id: 3, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
-  {id: 4, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
-  {id: 5, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
-  {id: 6, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'}
+  {id: 4, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'}
 ];
 
 let webProjects = [
+  {id: 7, imgSrc: 'images/switzleft.png',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
+  {id: 8, imgSrc: 'images/switzleft.png',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'}
+
+]
+
+let saasProjects = [
+  {id: 1, imgSrc: 'images/switzleft.png',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
+
+]
+
+let bankingProjects = [
+  {id: 1, imgSrc: 'images/switzleft.png',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
   {id: 1, imgSrc: 'images/switzleft.png',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
   {id: 1, imgSrc: 'images/switzleft.png',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'}
 
 ]
-
 //When document loads add the clicked class to all-projects and run the function of clicked
 $(document).ready(function(){
   $('#all-projects').addClass('clicked').click();
@@ -88,18 +97,40 @@ $('#web-dev').on('click', function(){
   $('#content-area').append(html);
 });
 
+//Web dev Tab
+$('#saas').on('click', function(){
+  var html = '';
+  $('#content-area').empty();
+  for(var i = 0; i < saasProjects.length; i++) {
+      html += renderCard(saasProjects[i]);  
+  }
+  $('#content-area').append(html);
+});
+
+//Web dev Tab
+$('#banking').on('click', function(){
+  var html = '';
+  $('#content-area').empty();
+  for(var i = 0; i < bankingProjects.length; i++) {
+      html += renderCard(bankingProjects[i]);  
+  }
+  $('#content-area').append(html);
+});
 
 // Generate the cards for the project Div
 function renderCard(project) {
-  var html = '<div class="card project-image col-xxl-6 d-flex" style="width: 40rem; height: 35rem; background-color: transparent;">';
+  var html = '<div class="card project-image col-xl-6 d-flex" style="width: 50rem; height: 35rem; background-color: transparent;">';
   html += '<img src="'+ project.imgSrc +'" class="card-img-top" alt="projects">';
-  html += '<div class="card-body project-text">';
+  html += '<div class="card-body project-text ">';
   html += '<h5 class="card-title project-title">' + project.title + '</h5>';
   html += '<p class="card-text project-body">' + project.body + '</p>';
-  html += '<a href="'+ project.demolink +'"class="project-buttons btn btn-primary">Demo</a>';
-  html += '<a href="'+ project.codelink+'" class="project-buttons btn btn-primary">Code</a>';
+  html += '<div class="button-div d-flex flex-direction-row;">';
+  html += '<a href="'+ project.demolink + '"class="project-buttons btn btn-primary" style = "margin-right: 1em;">Demo</a>';
+  html += '<a href="'+ project.codelink + '" class="project-buttons btn btn-primary">Code</a>';
   html += '</div>';
   html += '</div>';
+  html += '</div>';
+  return html;
   return html;
 }
 
@@ -112,10 +143,11 @@ function renderCard(project) {
 //   if(keyPressed === 27){
 //     $(this).val('');
 //   }if (text === ''){
-//     $('li').show();
+//     $('#content-area').show();
 //   }else {
 //       $('li').each(function () {
-//         let liText = $(this).text(;
+//         let liText = $(this).text(
+//         );
 //           if(text.toLowerCase() === liText.toLowerCase())
 //           {$(this).show();}
 //           else {
@@ -123,10 +155,11 @@ function renderCard(project) {
 //           }
 //         });
 //   }
+// });
 // Telling the document to run function after someone clicks on an li.
-// $(document).on('click', 'li', function(){
-// $(this)
-// })
+$(document).on('click', 'li', function(){
+$(this)
+})
 
 
 
