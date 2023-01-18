@@ -47,17 +47,29 @@ let projects = [
   {id: 6, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'}
 ];
 
-let $contentButton = $("#content-nav").find("li > button");
+let webProjects = [
+  {id: 1, imgSrc: 'images/switzleft.png',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
+  {id: 1, imgSrc: 'images/switzleft.png',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'}
 
-$contentButton.on('click', function () {;
+]
+
+//When document loads add the clicked class to all-projects and run the function of clicked
+$(document).ready(function(){
+  $('#all-projects').addClass('clicked').click();
+});
+
+
+//Click effect that highlights the background of the tab
+let $contentButton = $(".project-nav a");
+
+$contentButton.on('click', function () {
    $contentButton.removeClass('clicked')
    $(this).addClass('clicked');
 });
 
 
-
-// Function makes it so that it clears every time it is appended to HTML//
-$('#web-dev').on('click', function(){
+// All projects tab
+$('#all-projects').on('click', function(){
   var html = '';
   $('#content-area').empty();
   for(var i = 0; i < projects.length; i++) {
@@ -66,20 +78,55 @@ $('#web-dev').on('click', function(){
   $('#content-area').append(html);
 });
 
+//Web dev Tab
+$('#web-dev').on('click', function(){
+  var html = '';
+  $('#content-area').empty();
+  for(var i = 0; i < webProjects.length; i++) {
+      html += renderCard(webProjects[i]);  
+  }
+  $('#content-area').append(html);
+});
+
+
+// Generate the cards for the project Div
 function renderCard(project) {
-  var html = '<div class="card project-image col-xxl-6 d-flex" style="width: 40rem; height: 35rem;">';
+  var html = '<div class="card project-image col-xxl-6 d-flex" style="width: 40rem; height: 35rem; background-color: transparent;">';
   html += '<img src="'+ project.imgSrc +'" class="card-img-top" alt="projects">';
   html += '<div class="card-body project-text">';
   html += '<h5 class="card-title project-title">' + project.title + '</h5>';
   html += '<p class="card-text project-body">' + project.body + '</p>';
-  html += '<a href="'+ project.demolink + 'class="btn btn-primary">Demo</a>';
-  html += '<a href="'+ project.codelink+'" class="btn btn-primary">Code</a>';
+  html += '<a href="'+ project.demolink +'"class="project-buttons btn btn-primary">Demo</a>';
+  html += '<a href="'+ project.codelink+'" class="project-buttons btn btn-primary">Code</a>';
   html += '</div>';
   html += '</div>';
   return html;
 }
 
 
+//Filter method
+
+// $('#filter').keyup(function (event) {
+//   let text = $(this).val();
+//   let keyPressed = event.keycode;
+//   if(keyPressed === 27){
+//     $(this).val('');
+//   }if (text === ''){
+//     $('li').show();
+//   }else {
+//       $('li').each(function () {
+//         let liText = $(this).text(;
+//           if(text.toLowerCase() === liText.toLowerCase())
+//           {$(this).show();}
+//           else {
+//             $(this).hide();
+//           }
+//         });
+//   }
+// Telling the document to run function after someone clicks on an li.
+// $(document).on('click', 'li', function(){
+// $(this)
+// })
 
 
 
