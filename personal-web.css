@@ -720,12 +720,14 @@ transition: 0.2s;
 }
 
 .project-image:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
+  transition: 0.2s;
   cursor: pointer;
  
 }
 .card{
   margin-top: 15em;
+  margin-bottom: 10em;
 }
 
 
@@ -742,12 +744,11 @@ width: 35%;
 
 
 .project-image{
-border-radius: 10px;
 width:100%;
 height:70%;
 /* background-color: white; */
-border-top-left-radius: 10px 10px;
-border-top-right-radius: 10px 10px;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
 }
 
 .project-text{
@@ -756,10 +757,11 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 100%;
-height:40%;
-background-color: #1a1d58;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
+height:50%;
+background-image:linear-gradient(#252a7a, #090c3a); 
+/* background-color: #1a1d58; */
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
 }
 
 
@@ -773,13 +775,26 @@ padding-top: 5px;
 
 .project-body{
 padding-top: 10px;
-font-size: 10px;
+font-size: 12px;
 display: flex;
+align-items: center;
+justify-content: center;
+/* flex-direction: column; */
 padding-left: 3em;
 padding-right: 3em;
-justify-content: center;
-align-items: center;
 }
+
+
+.card-body img{
+  width: 50px;
+
+}
+
+
+
+
+
+
 
 /*---------------Fifth page------------------------------*/
 .five{

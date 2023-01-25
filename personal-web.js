@@ -6,8 +6,18 @@ $(document).ready(function() {
 
 //---------------------Parallax----------------------------//
 
+
+
+
+
+
+
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
+
+
+
+
 
 timeline
   .to(".person", 10, { y: -300 })
@@ -38,8 +48,59 @@ window.addEventListener("scroll",function(){
 
 //------------------------------------------------------//
 
+
+
+ 
+const skills = {
+ 
+  'Java':`<img align="left" alt="Java" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>`,
+
+  'Spring':`<img align="left" alt="Spring" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"/>`,
+
+  'Type':`<img align="left" alt="TypeScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"/>`,
+
+  'Angular':`<img align="left" alt="Angular" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />`,
+
+  'Git':`<img align="left" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>`,
+
+  'Linux':`<img align="left" alt="Linux" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"/>`,
+
+  'HTML':`<img align="left" alt="HTML" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />`,
+
+  'CSS':`<img align="left" alt="CSS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />`,
+
+  'Javascript':`<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />`,
+
+  'React':`<img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />`,
+
+  'Node':`<img align="left" alt="NodeJS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />`,
+
+  'Python':`<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />`,
+
+  'C++':`<img align="left" alt="C++" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg" />`,
+
+  'Github':`<img align="left" alt="GitHub" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />`,
+
+  'Gradle':`<img align="left" alt="Gradle" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" />`,
+
+  'Bash':`<img align="left" alt="Bash" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />`
+  
+   }
+  
+  
+
+
+
+
+
+
+
+
 let projects = [
-  {id: 1, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
+  {id: 1, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#" , body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.',
+  skills: `${skills.Javascript} ${skills.CSS} ${skills.HTML}`
+
+  },
   {id: 2, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
   {id: 3, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
   {id: 4, imgSrc: 'images/coffee-project.jpg',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'}
@@ -52,7 +113,7 @@ let webProjects = [
 ]
 
 let saasProjects = [
-  {id: 1, imgSrc: 'images/switzleft.png',title: 'Coffee Project', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
+  {id: 1, imgSrc: 'images/switzleft.png',title: 'Weather App', demolink: "#", codelink: "#", body: 'This project is a JavaScript program that creates a coffee table and allows for filtering and searching of the coffee data. The program begins by declaring variables for several HTML elements on the page, including a table body, a submit button, a roast selection dropdown, and a coffee search input field. The program also declares an array of coffee objects, each with an id, name, and roast property.'},
 
 ]
 
@@ -120,18 +181,24 @@ $('#banking').on('click', function(){
 // Generate the cards for the project Div
 function renderCard(project) {
   var html = '<div class="card project-image col-xl-6 d-flex" style="width: 50rem; height: 35rem; background-color: transparent;">';
+
   html += '<img src="'+ project.imgSrc +'" class="card-img-top" alt="projects">';
+
   html += '<div class="card-body project-text ">';
+
   html += '<h5 class="card-title project-title">' + project.title + '</h5>';
-  html += '<p class="card-text project-body">' + project.body + '</p>';
-  html += '<div class="button-div d-flex flex-direction-row;">';
+  html += '<p class="card-text project-body d-flex flex-direction-column">' + project.body + '</p>';
+  html += '<div class = "skills-icons">'+ project.skills + '</div>';
+  html += '<div class="button-div d-flex flex-direction-row; mt-3">';
   html += '<a href="'+ project.demolink + '"class="project-buttons btn btn-primary" style = "margin-right: 1em;">Demo</a>';
   html += '<a href="'+ project.codelink + '" class="project-buttons btn btn-primary">Code</a>';
   html += '</div>';
+
   html += '</div>';
+
   html += '</div>';
   return html;
-  return html;
+  
 }
 
 
