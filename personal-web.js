@@ -178,13 +178,13 @@ $('#banking').on('click', function(){
 // Generate the cards for the project Div
 function renderCard(project) {
   let {imgSrc, title, skills, demolink,codelink, body} = project;
-  var html = '<div class="card project-image col-xl-6 d-flex" style="width: 50rem; height: 35rem; background-color: transparent;">';
+  var html = '<div class="card project-image col-xl-4 d-flex" style="width: 50rem; height: 35rem; background-color: transparent;">';
   html += '<div class="image-container">';
   html += '<img src="'+ imgSrc +'" class="card-img-top" alt="projects">';
   html += '</div>';
   html += '<div class="card-body project-text ">';
 
-  html += `<h5 class="card-title project-title"> ${title} </h5>`;
+  html += '<h5 class="card-title project-title">' + title + '</h5>';
   html += '<p class="card-text project-body d-flex flex-direction-column">' + body + '</p>';
   html += '<div class = "skills-icons">'+ skills + '</div>';
   html += '<div class="button-div d-flex flex-direction-row; mt-3">';
