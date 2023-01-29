@@ -144,10 +144,6 @@ transition: ease-in 0.3s;
   z-index: -3;
 }
 
-.person{
-  z-index: 1;
-}
-
 .main-title {
   position: absolute;
   top: 40%;
@@ -218,32 +214,25 @@ left:50%
 }
 
 
-
 /*----My Expertise------------------------------------------*/
-.page-one{
-  height:100%;
-}
 
 .content {
   width: 100%;
   background: #08091c;
   height: 100%;
-  z-index: 2;
+  /* z-index: 2; */
   position: absolute;
   display:flex;
   flex-direction: column;
   align-items: center;
- 
 
 }
 .content-images {
   display: flex;
   align-items: flex-start;
   text-align: center;
- 
 }
 .name{
- 
   display: flex;
   font-size: 4em;
   font-weight: 600;
@@ -256,7 +245,6 @@ left:50%
   justify-content: flex-end;
   height:30%;
 }
-
 .cube{
   position:relative;
   width: 100px;
@@ -265,7 +253,6 @@ left:50%
   z-index: 2;
   animation: animate 40s linear infinite;
 }
-
 @keyframes animate {
   0% {
     transform: rotateX(-30deg) rotateY(0deg);
@@ -349,15 +336,26 @@ box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
 
 }
 
-
 /*-----------My Expertise-------------*/
 
 @media (max-width: 868px) {
  .laptop-main{
   display: none;
  }
+
+ .box-wrapper{
+  display:flex;
+  justify-content: end;
+  align-items: flex-end;
+  width:100%;
+  height: 50%;
+  /* background-color: #011570; */
 }
 
+
+
+
+}
 
 .expertise-box{
   margin-top:1em;
@@ -367,7 +365,6 @@ box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
   width:100%;
   height:100%;
   /* background-color: rgb(215, 20, 20); */
- 
 }
 
 /*--Skills Box attributes--*/
@@ -376,7 +373,7 @@ box-shadow: 0 0 50px rgba(253, 79, 4, 0.52),
   justify-content: end;
   align-items: flex-end;
   width:100%;
-  height: 70%;
+  height: 88%;
   /* background-color: #011570; */
 }
 
