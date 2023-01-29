@@ -198,6 +198,7 @@ function renderCard(project) {
   html += '</div>';
   return html;
   
+  
 }
 
 
