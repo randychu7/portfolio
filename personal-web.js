@@ -173,6 +173,7 @@ $('#banking').on('click', function(){
   $('#content-area').append(html);
 });
 
+
 //Images are 2893x1682
 // Generate the cards for the project Div
 function renderCard(project) {
