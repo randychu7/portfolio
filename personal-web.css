@@ -560,20 +560,14 @@ span{
 /*-----Fourth Page My Projects ------------------*/
 .four{
   background-color: #08091c;
-  height: 230vh;
 }
 .projects-wrapper{
-  height:100vh;
+  background-color: rgb(35, 27, 67);
 }
 
-.projects-heading{
-  height:100%;
-  width:100%;
-  /* background-color: darkviolet; */
-}
+
 
 .quote{
-  padding-top: 25em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -661,11 +655,7 @@ span{
   align-items: center;
  
 }
-.content-display{
-  height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-}
+
 
 
 .project-image:hover{
