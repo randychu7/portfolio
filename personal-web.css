@@ -11,7 +11,7 @@
 
 .page-wrapper {
   height: 100vh;
-  background-color: #08091c;
+  /* background-color: #08091c; */
 }
 
  button {
@@ -142,7 +142,7 @@ transition: ease-in 0.3s;
   position: absolute;
   object-fit: cover;
   z-index: -3;
-}
+} 
 
 .main-title {
   position: absolute;
